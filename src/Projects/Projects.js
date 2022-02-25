@@ -51,7 +51,7 @@ function Projects() {
           <div className="mt-6 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-6">
             {callouts.map((callout) => (
               <div key={callout.name} className="group relative pb-10">
-                <div className="relative w-full bg-transparent overflow-hidden group-hover:opacity-75 sm:aspect-w-16 sm:aspect-h-9 sm:h-64 lg:aspect-w-16 lg:aspect-h-9">
+                <div className="shadow-lg shadow-[#F2994F] relative w-full bg-transparent overflow-hidden group-hover:opacity-75 sm:aspect-w-16 sm:aspect-h-9 sm:h-64 lg:aspect-w-16 lg:aspect-h-9">
                   <img
                     src={callout.imageSrc}
                     alt={callout.imageAlt}

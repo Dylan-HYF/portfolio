@@ -11,7 +11,9 @@ header {
   list-style: none;
   margin-right: 60px;
 }
-
+.menu-items .header-links {
+  margin-right: 40px;
+}
 .link {
   font-size: 16px;
   font-weight: bold;
@@ -43,4 +45,22 @@ header {
   color: #000000;
   text-decoration: none;
   margin-left: 10px;
+}
+@media screen and (max-width: 640px) {
+  header {
+    justify-content: center;
+    /* padding-left: 15px; */
+  }
+  .menu-items {
+    align-items: center;
+  }
+  .menu-items li {
+    margin-right: 15px;
+  }
+  .menu-items li:last-child {
+    margin-right: 0;
+  }
+  .menu-items .header-links {
+    margin-right: 15px;
+  }
 }

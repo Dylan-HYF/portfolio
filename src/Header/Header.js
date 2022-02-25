@@ -12,7 +12,7 @@ function Header() {
           <li>
             <Link className="link" to="/projects">PROJECTS.</Link>
           </li>
-          <li style={{ marginRight: 40 }}>
+          <li className="header-links">
             {/* <Link className="link" to="/about">ABOUT.</Link> */}
             <a className="link" href="https://about.me/youfan" target="_blank">ABOUT.</a>
           </li>

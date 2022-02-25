@@ -264,3 +264,50 @@
     font-size: 100px;
   }
 }
+
+@media screen and (max-width: 640px) {
+  .hi h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  .hi h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .hi p {
+    font-size: 16px;
+  }
+  #flower1 {
+    top: 20px;
+    left: 85px;
+  }
+  #star {
+    bottom: 101px;
+    right: 48px;
+  }
+  .myself h2 {
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .myself p {
+    font-size: 12px;
+    padding: 0 50px;
+    margin-bottom: 60px;
+  }
+  .marquee {
+    font-size: 40px;
+  }
+  .boxes {
+    padding-top: 80px;
+  }
+  .contact h2 {
+    font-size: 40px;
+  }
+  .links h3 {
+    font-size: 20px;
+  }
+  .links a {
+    font-size: 16px;
+  }
+}

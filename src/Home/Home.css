@@ -6,8 +6,9 @@
 }
 .hi h2 {
   font-style: italic;
-  font-size: 80px;
-  margin-top: 40px;
+  font-size: 100px;
+  margin-top: 0;
+  margin-left: 10px;
   font-weight: 600;
   letter-spacing: -1px;
   margin-bottom: 30px;
@@ -21,6 +22,7 @@
   letter-spacing: -3px;
   margin-bottom: 170px;
 }
+
 .hi p {
   font-style: italic;
   text-align: right;
@@ -160,3 +162,105 @@
   bottom: 30px;
   left: 20px;
 } */
+.contact {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 220px;
+  box-sizing: content-box;
+}
+.dotted {
+  border-bottom: 1px dashed grey;
+  width: 80%;
+  margin: 40px auto;
+}
+.contact h2 {
+  font-size: 140px;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+  margin-bottom: 40px;
+}
+.big-flower, .big-flower-left, .big-flower-right {
+  animation:  animate-rotate 15s infinite linear;
+}
+.middle, .left, .right {
+  width: 674px;
+  height: 674px;
+  overflow: hidden;
+}
+.middle, .left {
+  position: absolute;
+  width: 40%;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.left {
+  left: 0;
+}
+.right {
+  position: absolute;
+  width: 40%;
+  top: 20px;
+  right: 0;
+  transform: translateX(50%);
+}
+/* .big-flower, .big-flower-left {
+  position: absolute;
+  width: 40%;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%)
+}
+.big-flower-left {
+  left: 0;
+}
+.big-flower-right {
+  position: absolute;
+  width: 40%;
+  top: 20px;
+  right: 0;
+  transform: translateX(50%)
+} */
+.links {
+  position: relative;
+  z-index: 1;
+  width: 55%;
+  margin: 0 auto;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+.links div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottom h3 {
+  margin: 0;
+}
+.links h3 {
+  font-style: italic;
+  font-size: 40px;
+  margin-right: 30px;
+}
+.links a {
+  color: #000;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+@media screen and (max-width: 1330px) {
+  .hi h1 {
+    font-size: 150px;
+  }
+  .marquee {
+    font-size: 80px;
+  }
+  .contact {
+    padding-bottom: 180px;
+  }
+  .contact h2 {
+    font-size: 100px;
+  }
+}

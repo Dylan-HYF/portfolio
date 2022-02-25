@@ -1,7 +1,8 @@
-import React from 'react'
+
 import './Home.css'
 import flower from '../Assets/Asset 1.svg'
 import star from '../Assets/Asset 2.svg'
+import bigFlower from '../Assets/Asset 4.svg'
 function Home() {
   const skills = [
     { type: 'HTML', detail: 'The HyperText Markup Language.' },
@@ -18,14 +19,14 @@ function Home() {
     x.id = i
     return x
   })
-  console.log(skillsRendered)
+  // console.log(skillsRendered)
   return (
     <div>
       <section className="hi">
-        <img src={flower} alt="a rotating icon" id="flower1" />
+        <img src={flower} alt="a rotating flower icon" id="flower1" />
         <h2>Hi,<br />my name is</h2>
         <h1>Youfan Huang</h1>
-        <img src={star} alt="a rotating icon" id="star" />
+        <img src={star} alt="a rotating star icon" id="star" />
         <p>I am a Frontend developer and a former graphic designer.</p>
       </section>
       <section className="myself">
@@ -52,6 +53,34 @@ function Home() {
               {/* <div className="line"></div> */}
             </div>
           ))}
+        </section>
+      </section>
+      <div className="dotted"></div>
+      <section className="contact">
+
+        <h2>#OPENTOWORK</h2>
+        <div className="middle">
+          <img src={bigFlower} alt="a big flower icon" className="big-flower" />
+        </div>
+        <div className="left">
+          <img src={bigFlower} alt="a big flower icon" className="big-flower-left" />
+
+        </div>
+        <div className="right">
+          <img src={bigFlower} alt="a big flower icon" className="big-flower-right" />
+
+        </div>
+        <section className="links">
+          <div>
+            <h3>Social</h3>
+            <a href="https://www.linkedin.com/in/youfan-huang/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/Dylan-HYF" target="_blank">Github</a>
+          </div>
+          <div className="bottom">
+            <h3>Contact</h3>
+            <a href="mailto:hyf.dylan@gmail.com">Gmail</a>
+            <a href="tel:+12899365086" style={{ textDecoration: 'none' }}>2899365086</a>
+          </div>
         </section>
       </section>
     </div>

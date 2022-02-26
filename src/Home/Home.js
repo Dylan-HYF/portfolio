@@ -1,9 +1,21 @@
-
+import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
+// import Loading from './Loading'
 import './Home.css'
 import flower from '../Assets/Asset 1.svg'
 import star from '../Assets/Asset 2.svg'
 import bigFlower from '../Assets/Asset 4.svg'
 function Home() {
+  // const [loading, setLoading] = useState(true)
+  const [isReady, setIsReady] = useState(false)
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setLoading(false)
+  //   }, 3000)
+  // }, [])
+  useEffect(() => {
+    document.fonts.load("12px 'Playfair Display'").then(() => setIsReady(true))
+  }, [])
   const skills = [
     { type: 'HTML', detail: 'The HyperText Markup Language.' },
     { type: 'CSS', detail: 'Cascading Style Sheets is a style sheet language.' },
@@ -20,8 +32,11 @@ function Home() {
     return x
   })
   // console.log(skillsRendered)
+  // if (loading) {
+  //   return <Loading />
+  // }
   return (
-    <div>
+    isReady && <div>
       <section className="hi">
         <img src={flower} alt="a rotating flower icon" id="flower1" />
         <h2>Hi,<br />my name is</h2>
@@ -34,8 +49,10 @@ function Home() {
         <p>
           I majored in graphic design at college, but I found myself more interested in building apps rather than designing them,<br />
           So I signed up for a bootcamp to learn frontend development, and started web development after graduated.<br />
-          I am a lifelong learner and have a passionate interest in Computer Science, and technologies about web.
+          I am a lifelong learner and have a passionate interest in Computer Science, and technologies about web.<br />
+          <Link className="my-link" to="/projects">MY PROJECTS</Link>
         </p>
+
         <img src={flower} alt="a rotating icon" id="flower2" />
       </section>
       <section className="skills">

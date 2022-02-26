@@ -67,7 +67,7 @@
   text-align: center;
   font-weight: 700;
   line-height: 2em;
-  margin-bottom: 300px;
+  margin-bottom: 200px;
 }
 #flower2 {
   width: 8%;
@@ -249,6 +249,12 @@
   font-size: 30px;
   font-weight: bold;
   margin-left: 20px;
+}
+.my-link {
+  display: block;
+  margin-top: 30px;
+  font-size: 25px;
+  text-decoration: underline;
 }
 @media screen and (max-width: 1330px) {
   .hi h1 {

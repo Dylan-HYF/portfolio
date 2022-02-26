@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import Yanfabao from '../Assets/Yanfabao.png'
 import Palendar from '../Assets/palendar-social.jpg'
 import Docs from '../Assets/Docs.png'
@@ -42,6 +43,9 @@ const callouts = [
 ]
 
 function Projects() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const emptyLink = (href, e) => {
     if (href === '#0') {
       e.preventDefault()

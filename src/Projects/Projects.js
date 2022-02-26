@@ -42,6 +42,11 @@ const callouts = [
 ]
 
 function Projects() {
+  const emptyLink = (href, e) => {
+    if (href === '#0') {
+      e.preventDefault()
+    }
+  }
   return (
     <div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -59,7 +64,7 @@ function Projects() {
                   />
                 </div>
                 <h3 className="mt-6 text-sm text-gray-500">
-                  <a href={callout.href} target={callout.href.length > 2 ? '_blank' : ''}>
+                  <a href={callout.href} target={callout.href.length > 2 ? '_blank' : ''} onClick={(e) => emptyLink(callout.href, e)}>
                     <span className="absolute inset-0" />
                     {callout.name}
                   </a>
